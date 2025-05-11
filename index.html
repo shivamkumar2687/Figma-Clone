@@ -3,30 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Figma Land Assignment</title>
+    <title>Assignment</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">FIGMA LAND</div>
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#features">Product</a></li>
-                <li><a href="#pricing">Pricing</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="nav-social">
-                <a href="#"><img src="assets/images/twitter.svg" alt="Twitter"></a>
-                <a href="#"><img src="assets/images/facebook.svg" alt="Facebook"></a>
-                <a href="#"><img src="assets/images/linkedin.svg" alt="LinkedIn"></a>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <!-- Hero Section -->
+    <div class="hero-wrapper">
+        <header>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#features">Product</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="logo">
+                    <img src="assets/images/logo-light.png" alt="Figma Land Logo" />
+                </div>
+                <div class="nav-social">
+                    <a href="#"><img src="assets/images/twitter.svg" alt="Twitter"></a>
+                    <a href="#"><img src="assets/images/facebook.svg" alt="Facebook"></a>
+                    <a href="#"><img src="assets/images/linkedin.svg" alt="LinkedIn"></a>
+                </div>
+            </nav>
+        </header>
         <section id="hero" class="hero-section">
             <div class="hero-bg"></div>
             <div class="hero-content">
@@ -35,23 +36,25 @@
                 <button class="btn-primary">Try For Free</button>
             </div>
         </section>
+    </div>
+    <main>
         <!-- Features Section -->
         <section id="features" class="features-section">
             <h2>Features</h2>
             <p>Most calendars are designed for teams.<br>Slate is designed for freelancers</p>
             <div class="features-list">
                 <div class="feature-item">
-                    <img src="assets/images/feature1.svg" alt="OpenType features">
+                    <img src="assets/images/Features/f1.png" alt="OpenType features">
                     <h3>OpenType features<br>Variable fonts</h3>
                     <p>Slate helps you see how many more days you need to work to reach your financial goal.</p>
                 </div>
                 <div class="feature-item">
-                    <img src="assets/images/feature2.svg" alt="Design with real data">
+                    <img src="assets/images/Features/f2.png" alt="Design with real data">
                     <h3>Design with real data</h3>
                     <p>Slate helps you see how many more days you need to work to reach your financial goal.</p>
                 </div>
                 <div class="feature-item">
-                    <img src="assets/images/feature3.svg" alt="Fastest way to take action">
+                    <img src="assets/images/Features/f3.png" alt="Fastest way to take action">
                     <h3>Fastest way to take action</h3>
                     <p>Slate helps you see how many more days you need to work to reach your financial goal.</p>
                 </div>
@@ -61,7 +64,7 @@
         <section id="video" class="video-section">
             <div class="video-wrapper">
                 <video id="promoVideo" poster="assets/images/video-poster.jpg">
-                    <source src="assets/video/sample.mp4" type="video/mp4">
+                    <source src="assets/video/NatureVideo.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
                 <div id="playOverlay" class="play-overlay">&#9658;</div>
