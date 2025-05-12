@@ -2,21 +2,53 @@
 const video = document.getElementById('promoVideo');
 const overlay = document.getElementById('playOverlay');
 if (video && overlay) {
+  // Set video to have a black background initially
+  video.style.backgroundColor = '#000';
+  
   function togglePlay() {
     if (video.paused) {
       video.play();
-      overlay.style.display = 'none';
+      overlay.style.opacity = '0';
+      setTimeout(() => {
+        overlay.style.display = 'none';
+      }, 300);
     } else {
       video.pause();
       overlay.style.display = 'flex';
+      setTimeout(() => {
+        overlay.style.opacity = '1';
+      }, 10);
     }
+    
+    // For visual feedback - toggle a class
+    overlay.classList.toggle('clicked');
+    
+    // Remove the class after animation time
+    setTimeout(() => {
+      overlay.classList.remove('clicked');
+    }, 300);
   }
+  
   video.addEventListener('click', togglePlay);
   overlay.addEventListener('click', togglePlay);
-  video.addEventListener('pause', () => overlay.style.display = 'flex');
-  video.addEventListener('play', () => overlay.style.display = 'none');
-  // Show overlay initially if video is paused
-  if (video.paused) overlay.style.display = 'flex';
+  
+  video.addEventListener('pause', () => {
+    overlay.style.display = 'flex';
+    setTimeout(() => {
+      overlay.style.opacity = '1';
+    }, 10);
+  });
+  
+  video.addEventListener('play', () => {
+    overlay.style.opacity = '0';
+    setTimeout(() => {
+      overlay.style.display = 'none';
+    }, 300);
+  });
+  
+  // Show overlay initially
+  overlay.style.display = 'flex';
+  overlay.style.opacity = '1';
 }
 
 // Modal for Contact Form
