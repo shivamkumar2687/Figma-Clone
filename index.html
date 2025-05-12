@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+    <title>Figma Land</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -29,7 +29,6 @@
             </nav>
         </header>
         <section id="hero" class="hero-section">
-            <div class="hero-bg"></div>
             <div class="hero-content">
                 <h1>The best products<br>start with Figma</h1>
                 <p>Most calendars are designed for teams. Slate is designed for freelancers</p>
@@ -43,7 +42,7 @@
             <div class="features-section">
                 <h2>Features</h2>
                 <p>Most calendars are designed for teams.<br>Slate is designed for freelancers</p>
-                <div class="features-list custom-features-list">
+                <div class="custom-features-list">
                     <div class="feature-item">
                         <img src="assets/images/Features/f1.png" alt="OpenType features">
                         <h3>OpenType features<br>Variable fonts</h3>
@@ -56,14 +55,14 @@
                     </div>
                     <div class="feature-item">
                         <img src="assets/images/Features/f3.png" alt="Fastest way to take action">
-                        <h3>Fastest way to take action</h3>
+                        <h3>Fastest way to<br>take action</h3>
                         <p>Slate helps you see how many more days you need to work to reach your financial goal.</p>
                     </div>
                 </div>
             </div>
-            <div class="video-section custom-video-section">
-                <div class="video-wrapper custom-video-wrapper">
-                    <video id="promoVideo" poster="assets/images/video-poster.jpg">
+            <div class="custom-video-section">
+                <div class="custom-video-wrapper">
+                    <video id="promoVideo">
                         <source src="assets/video/NatureVideo.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
@@ -103,7 +102,7 @@
         <section id="partners" class="partners-section">
             <h2>Partners</h2>
             <p>Most calendars are designed for teams.<br>Slate is designed for freelancers</p>
-            <div class="partners-logos partners-logos-grid">
+            <div class="partners-logos-grid">
                 <div class="partner-logo">
                     <h6>Client Name</h6>
                     <img src="assets/images/Partners/oogle.png" alt="Google">
@@ -147,23 +146,23 @@
                     <img src="assets/images/Testimonials/IBM.png" alt="IBM Logo" class="testimonial-logo">
                     <p>Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan their schedule.</p>
                     <div class="testimonial-user">
-                        <img src="assets/images/Testimonials/avatar.png" alt="John Doe">
+                        <img src="assets/images/Testimonials/avatar.png" alt="User Avatar">
                         <span>John Doe<br><small>UI designer</small></span>
                     </div>
                 </div>
                 <div class="testimonial-slide">
-                    <img src="assets/images/Partners/amazon.png" alt="IBM Logo" class="testimonial-logo">
+                    <img src="assets/images/Partners/amazon.png" alt="Amazon Logo" class="testimonial-logo">
                     <p>Slate is the most intuitive calendar for freelancers. I love the clean design and easy-to-use features.</p>
                     <div class="testimonial-user">
-                        <img src="assets/images/Testimonials/avatar.png" alt="Jane Smith">
+                        <img src="assets/images/Testimonials/avatar.png" alt="User Avatar">
                         <span>Jane Smith<br><small>Product Manager</small></span>
                     </div>
                 </div>
                 <div class="testimonial-slide">
-                    <img src="assets/images/Partners/Microsoft.png" alt="IBM Logo" class="testimonial-logo">
+                    <img src="assets/images/Partners/Microsoft.png" alt="Microsoft Logo" class="testimonial-logo">
                     <p>Using Slate has helped me organize my work and reach my goals faster. Highly recommended!</p>
                     <div class="testimonial-user">
-                        <img src="assets/images/Testimonials/avatar.png" alt="Alex Brown">
+                        <img src="assets/images/Testimonials/avatar.png" alt="User Avatar">
                         <span>Alex Brown<br><small>Developer</small></span>
                     </div>
                 </div>
@@ -182,7 +181,7 @@
                 <div class="pricing-card">
                     <h3>FREE</h3>
                     <p>Organize across all apps by hand</p>
-                    <div class="price">0 <span>$</span> <small>Per Month</small></div>
+                    <div class="price"><span>$</span>0 <small>Per Month</small></div>
                     <ul>
                         <li>Pricing Feature</li>
                         <li>Pricing Feature</li>
@@ -195,7 +194,7 @@
                 <div class="pricing-card featured">
                     <h3>STANDARD</h3>
                     <p>Organize across all apps by hand</p>
-                    <div class="price">10 <span>$</span> <small>Per Month</small></div>
+                    <div class="price"><span>$</span>10 <small>Per Month</small></div>
                     <ul>
                         <li>Pricing Feature</li>
                         <li>Pricing Feature</li>
@@ -208,7 +207,7 @@
                 <div class="pricing-card">
                     <h3>BUSINESS</h3>
                     <p>Organize across all apps by hand</p>
-                    <div class="price">99 <span>$</span> <small>Per Month</small></div>
+                    <div class="price"><span>$</span>99 <small>Per Month</small></div>
                     <ul>
                         <li>Pricing Feature</li>
                         <li>Pricing Feature</li>
@@ -245,8 +244,8 @@
                         <span class="info-icon">✉️</span>
                         <span>willie.jennings@example.com</span>
                     </div>
-                    <div class="info-item">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019019857726!2d-122.4194151846816!3d37.7749297797597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c7e2b1b1b%3A0x4a0b8b8b8b8b8b8b!2sHayes%20Valley%2C%20San%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1610000000000!5m2!1sen!2sus" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <div class="contact-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019019857726!2d-122.4194151846816!3d37.7749297797597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c7e2b1b1b%3A0x4a0b8b8b8b8b8b8b!2sHayes%20Valley%2C%20San%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1610000000000!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
                     <div class="contact-social">
                         <a href="#"><img src="assets/images/Social Media/twitter.png" alt="Twitter"></a>
@@ -294,7 +293,7 @@
             <div class="footer-contact">
                 <div class="info-item">
                     <span class="info-icon">📍</span>
-                    <span>7480 Mistwood Hollo</span>
+                    <span>7480 Mistwood Hollow</span>
                 </div>
                 <div class="info-item">
                     <span class="info-icon">📞</span>
@@ -312,7 +311,7 @@
     <div id="modal" class="modal">
         <div class="modal-content">
             <span class="close-btn">&times;</span>
-            <p>Your query sent successfully</p>
+            <p>Your message has been sent successfully!</p>
         </div>
     </div>
     <script src="script.js"></script>
