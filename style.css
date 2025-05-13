@@ -1,7 +1,7 @@
 :root {
-  --primary: #4452FE;
+  --primary: #2091F9;
   --dark: #252B42;
-  --light: #fff;
+  --light: #ffff;
   --gray: #bcbcbc;
   --bg: #f5f6fa;
   --font: 'Open Sans', Arial, sans-serif;
@@ -20,6 +20,10 @@ body {
   color: var(--dark);
   line-height: 1.6;
   overflow-x: hidden;
+}
+
+main {
+  background-color: var(--light);
 }
 
 header, .hero-section {
@@ -375,11 +379,15 @@ header {
 .newsletter-section {
   background: var(--light);
   display: flex;
+  flex-direction: row;
+  gap: 15px;
   align-items: center;
   justify-content: space-between;
-  padding: 80px 20px;
-  max-width: 1200px;
-  margin: 0 auto;
+  /* padding: 80px 20px; */
+  width: 1440px;
+  height: 725x;
+  /* max-width: 1200px; */
+  /* padding: auto; */
 }
 
 .newsletter-illustration {
@@ -390,14 +398,14 @@ header {
 }
 
 .newsletter-illustration img {
-  max-width: 100%;
-  height: auto;
+  width: 750px;
+  height: 555px;
 }
 
 .newsletter-content {
-  flex: 1;
-  max-width: 500px;
-  padding: 0 20px;
+  width: 544px;
+  height: 500px;
+
 }
 
 .newsletter-content h4 {
@@ -418,11 +426,13 @@ header {
 .newsletter-content p {
   font-size: 20px;
   margin-bottom: 30px;
-  color: #374754;
+  /* color: #374754; */
 }
 
 #newsletterForm {
   display: flex;
+  flex-direction: row;
+  gap: 10px;
   max-width: 450px;
   margin-top: 30px;
 }
@@ -430,7 +440,9 @@ header {
 #newsletterForm input[type="email"] {
   flex: 1;
   padding: 15px 20px;
-  border-radius: 4px 0 0 4px;
+  border-radius: 39px;
+  width: 273px;
+  height: 54px;
   border: 1px solid #E8E8E8;
   font-size: 16px;
   background: #F4F4F4;
@@ -440,20 +452,18 @@ header {
   background: var(--primary);
   color: #fff;
   border: none;
-  border-radius: 0 4px 4px 0;
+  width: 175px;
+  height: 58px;
+  border-radius: 39px;
   padding: 15px 25px;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
-  transition: background 0.2s;
-  text-transform: uppercase;
-}
-
-#newsletterForm button:hover {
-  background: #2231a5;
 }
 
 .partners-section {
+  width: 1440px;
+  height: 932px;
   text-align: center;
   padding: 80px 20px;
   background: var(--light);
