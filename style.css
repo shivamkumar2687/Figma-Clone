@@ -152,25 +152,26 @@ header {
 }
 
 .btn-primary {
-  background: #4D8DFF;
+  background: #2091F9;
   color: var(--light);
   border: none;
   border-radius: 35px;
   padding: 16px 40px;
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 500;
+  margin-top: 80px;
+  width: 236px;
+  height: 60px;
   cursor: pointer;
-  transition: background 0.2s, transform 0.1s;
   text-transform: none;
   letter-spacing: normal;
-  box-shadow: 0 5px 10px rgba(77, 141, 255, 0.3);
 }
-
+/* 
 .btn-primary:hover {
   background: #3a7ae6;
   transform: translateY(-2px);
   box-shadow: 0 8px 15px rgba(77, 141, 255, 0.4);
-}
+} */
 
 .btn-primary:active {
   transform: translateY(1px);
@@ -461,60 +462,75 @@ header {
   cursor: pointer;
 }
 
+
 .partners-section {
+  text-align: center;
+  padding: 10rem 2rem 2rem 2rem;
   width: 1440px;
   height: 932px;
-  text-align: center;
-  padding: 80px 20px;
   background: var(--light);
 }
 
 .partners-section h2 {
-  font-size: 48px;
-  font-weight: 700;
-  margin-bottom: 25px;
+  font-size: 45px;
+  font-weight: 200;
+  margin-bottom: 10px;
   color: var(--dark);
-}
-
-.partners-section p {
-  font-size: 20px;
-  color: #374754;
-  margin-bottom: 60px;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .partners-logos-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 1px;
-  max-width: 800px;
-  margin: 0 auto 40px;
-  background: #E5E5E5;
+  grid-template-rows: 1fr 1fr;
+  gap: 0;
+  width: 704px;
+  margin: 40px auto 32px auto;
+  background: transparent;
 }
-
-.partner-logo {
+.partners-logos-grid .partner-logo {
   background: #fff;
+  border: 1px solid #e5e5e5;
+  border-radius: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 30px 20px;
+  padding: 32px 0 24px 0;
+  min-width: 176px;
+  min-height: 110px;
+  box-sizing: border-box;
 }
-
+.partners-logos-grid .partner-logo:nth-child(5) {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+.partners-logos-grid .partner-logo:nth-child(6) {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+.partners-logos-grid .partner-logo:nth-child(7) {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+.partners-logos-grid .partner-logo:nth-child(8) {
+  grid-column: 4 / 5;
+  grid-row: 2 / 3;
+}
 .partner-logo h6 {
-  font-size: 14px;
-  color: #252B42;
-  margin-bottom: 15px;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #434343;
+  margin-bottom: 12px;
+  margin-top: 0;
+}
+.partner-logo img {
+  width: auto;
+  max-width: 120px;
+  max-height: 40px;
+  margin: 0 auto;
+  display: block;
 }
 
-.partner-logo img {
-  max-height: 35px;
-  max-width: 120px;
-  object-fit: contain;
-}
 
 .testimonials-section {
   background: var(--bg);
