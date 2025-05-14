@@ -452,36 +452,42 @@ header {
 }
 
 #newsletterForm {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  width: 100%;
   max-width: 450px;
   margin-top: 30px;
+}
+
+.newsletter-input-group {
+  display: flex;
+  flex-direction: row;
   align-items: center;
+  gap: 10px;
+  width: 100%;
 }
 
 #newsletterForm input[type="email"] {
   flex: 1;
-  min-width: 200px;
   padding: 15px 20px;
   border-radius: 39px;
   height: 54px;
   border: 1px solid #E8E8E8;
   font-size: 16px;
   background: #F4F4F4;
+  margin: 0;
 }
 
 #newsletterForm button {
   background: var(--primary);
   color: #fff;
   border: none;
-  min-width: 175px;
-  height: 58px;
   border-radius: 39px;
   padding: 15px 25px;
+  height: 58px;
+  width: 175px;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
+  white-space: nowrap;
 }
 
 /* Partners Section */
@@ -1147,12 +1153,19 @@ header {
     font-size: 16px;
   }
   
-  #newsletterForm input[type="email"] {
-    width: 100%;
+  #newsletterForm input[type="email"],
+  #newsletterForm button {
+    width: auto;
+  }
+  
+  .newsletter-input-group {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
   }
   
   #newsletterForm button {
-    width: 100%;
+    flex-shrink: 0;
   }
   
   .footer-links > div {
