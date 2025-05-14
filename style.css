@@ -883,26 +883,38 @@ header {
 }
 
 .contact-info-top .info-item {
+  display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 200px;
-  height: 60px;
-  margin-bottom: 0;
-  gap: 0;
+  justify-content: flex-start;
+  gap: 10px;
+  text-align: center;
 }
-
-.contact-info-top .info-icon {
-  font-size: 24px;
-  color: var(--primary);
-  margin-bottom: 5px;
-  margin-right: 0;
+.contact-info-top .info-item img {
+  width: 26px;
+  height: 32px;
+  object-fit: contain;
 }
-
+.address-item {
+  width: 304px;
+  height: 108px;
+}
+.phone-item {
+  width: 132px;
+  height: 87px;
+}
+.email-item {
+  width: 242px;
+  height: 75px;
+}
 .contact-info-top .info-item span {
   width: 100%;
   height: auto;
   text-align: center;
+  font-size: 16px;
+  color: #374754;
+  line-height: 1.6;
+  display: block;
 }
 
 .contact-map {
