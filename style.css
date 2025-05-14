@@ -763,6 +763,9 @@ header {
 
 .contact-section {
   padding: 80px 20px;
+  height: 1206px;
+  width: 1440px;
+  display: flex;
   background: var(--light);
   text-align: center;
 }
@@ -850,11 +853,11 @@ header {
 .contact-info {
   width: 48%;
   display: flex;
-  flex-direction: column;
 }
 
 .info-item {
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
   margin-bottom: 30px;
 }
@@ -870,8 +873,11 @@ header {
 }
 
 .info-item span {
+  text-align: center;
   font-size: 16px;
   color: #374754;
+  width: 280px;
+  height: 46px;
   line-height: 1.6;
 }
 
