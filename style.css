@@ -1,3 +1,5 @@
+ /* Variables & Reset */
+
 :root {
   --primary: #2091F9;
   --dark: #252B42;
@@ -42,7 +44,7 @@ header, .hero-section {
 
 
 .hero-container {
-  background: white; /* Makes the outside area white */
+  background: white;
   position: relative;
   overflow: hidden;
 }
@@ -167,6 +169,8 @@ header {
   margin-right: auto;
   opacity: 0.8;
 }
+
+   /* Buttons & Interactive Elements */
 
 .btn-primary {
   background: #2091F9;
@@ -348,6 +352,7 @@ header {
 }
 
 /* Organize Section */
+
 .organize-section {
   padding: 80px 20px;
 }
@@ -491,6 +496,7 @@ header {
 }
 
 /* Partners Section */
+
 .partners-section {
   text-align: center;
   padding: 80px 20px;
@@ -541,6 +547,7 @@ header {
 }
 
 /* Testimonials Section */
+
 .testimonials-section {
   text-align: center;
   padding: 80px 20px;
@@ -763,6 +770,7 @@ header {
 }
 
 /* Contact Section */
+
 .contact-section {
   display: flex;
   flex-direction: column;
@@ -906,6 +914,7 @@ header {
 }
 
 /* Footer Section */
+
 .footer-section {
   padding: 60px 20px;
   background: var(--dark);
@@ -983,6 +992,7 @@ header {
 }
 
 /* Modal Styles */
+
 .modal {
   display: none;
   position: fixed;
