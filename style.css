@@ -950,8 +950,11 @@ header {
 
 .footer-content {
   display: flex;
-  justify-content: space-between;
-  max-width: 1200px;
+  justify-content: center;
+  align-items: flex-start;
+  width: 916px;
+  height: 267px;
+  gap: 125px;
   margin: 0 auto;
 }
 
@@ -1004,6 +1007,16 @@ header {
   width: 24px;
   height: 24px;
   object-fit: contain;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: var(--primary);
+  text-decoration: underline;
 }
 
 @media (max-width: 900px) {
