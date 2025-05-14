@@ -851,16 +851,18 @@ header {
   background: var(--primary);
   color: var(--light);
   border: none;
-  border-radius: 39px;
+  border-radius: 35px;
   padding: 16px 40px;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
   transition: background 0.2s;
   text-transform: none;
-  width: 100%;
-  max-width: 236px;
+  height: 56px;
+  width: 145px;
   margin-top: 0;
+  align-self: flex-start;
+  margin-left: 0;
 }
 
 .contact-info {
@@ -922,7 +924,7 @@ header {
   height: 343.19px;
   border-radius: 8px;
   overflow: hidden;
-  margin-top: 0;
+  margin-top: 29px;
   margin-bottom: 0;
   padding-top: 10px;
   padding-bottom: 10px;
